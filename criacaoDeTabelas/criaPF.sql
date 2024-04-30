@@ -1,0 +1,5 @@
+CREATE TABLE PessoaFisica (
+  idPessoaFisica INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+  CPF VARCHAR(11) UNIQUE NOT NULL,
+  CONSTRAINT FK_PessoaFisica_Pessoa FOREIGN KEY (idPessoaFisica) REFERENCES Pessoa(idPessoa)
+);
