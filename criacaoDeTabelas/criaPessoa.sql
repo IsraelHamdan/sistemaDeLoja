@@ -1,5 +1,5 @@
 CREATE TABLE Pessoa (
-  idPessoa INT  IDENTITY(1,1) NOT NULL,
+  idPessoa INT  NOT NULL,
   Nome VARCHAR(255) NOT NULL,
   Logradouro VARCHAR(255),
   Cidade VARCHAR(255),
