@@ -57,7 +57,12 @@ INSERT INTO Pessoas (idPessoa, Nome, Logradouro, Cidade,  Estado, Telefone, Emai
 VALUES
   (1, 'João Silva','Rua', 'São Luis', 'Ma', '11999999999', 'joaosilva@email.com'),
   (2, 'Maria Souza', 'Avenida', 'Petropoles', 'RJ', '21999999999', 'mariasouza@email.com'),
-  (3, 'Pedro Oliveira','Condominio', 'Belo Horizonte', 'MG', '31999999999', 'pedrooliveira@email.com');
+  (3, 'Pedro Oliveira','Condominio', 'Belo Horizonte', 'MG', '31999999999', 'pedrooliveira@email.com'), 
+  (4, 'Budwiser','Rua', 'São Luis', 'Ma', '11999999999', 'budwiser@email.com'),
+  (5, 'Ambev', 'Avenida', 'Petropoles', 'RJ', '21999999999', 'ambev@email.com'),
+  (6, 'Heiniken','Parque', 'Belo Horizonte', 'MG', '31999999999', 'Heiniken@email.com'),
+  (7, 'Corona','Parque', 'Belo Horizonte', 'MG', '31999999999', 'Corona@email.com'),
+  (8, 'Coca-cola','Fabrica', 'Uberlandia ', 'MG', '31336541325', 'cocacolabr@gmail.com');
   
 INSERT INTO PessoasFisicas (idPessoaFisica , CPF)
 VALUES
@@ -67,21 +72,13 @@ VALUES
 
  
  --inserindo pessoas juridicas 
-INSERT INTO Pessoas (idPessoa, Nome, Logradouro, Cidade,  Estado, Telefone, Email)
-VALUES
-  (4, 'Budwiser','Rua', 'São Luis', 'Ma', '11999999999', 'budwiser@email.com'),
-  (5, 'Ambev', 'Avenida', 'Petropoles', 'RJ', '21999999999', 'ambev@email.com'),
-  (6, 'Heiniken','Parque', 'Belo Horizonte', 'MG', '31999999999', 'Heiniken@email.com'),
-  (7, 'Corona','Parque', 'Belo Horizonte', 'MG', '31999999999', 'Corona@email.com'),
-  (8, 'Coca-cola','Fabrica', 'Uberlandia ', 'MG', '31336541325', 'cocacolabr@gmail.com');
-  
-  INSERT INTO PessoasJuridicas (idPJ, CNPJ)
+INSERT INTO PessoasJuridicas (idPJ, CNPJ)
 
 VALUES
   (4, '2151321531'),
   (5, '1232151546'),
   (6, '1516541351'),
-  (7, '5531546535');
+  (7, '5531546535'),
   (8, '58796413561');
 
 INSERT INTO Usuarios (idUser, loginUser, Senha)
