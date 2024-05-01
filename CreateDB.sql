@@ -46,11 +46,11 @@ CREATE TABLE Movimentos (
   FK_idUsuario INT,
   FK_idPessoa INT, 
   FK_idProduto INT,
-  Constraint C_fk_idUser FOREIGN KEY (FK_idUsuario) REFERENCES dbo.Usuarios(idUser), 
-  Constraint C_fk_idPessoa FOREIGN KEY (FK_idPessoa) REFERENCES dbo.Pessoas(idPessoa),
-  Constraint C_fk_idProduto FOREIGN KEY (FK_idProduto) REFERENCES dbo.Produtos(idProduto),
-  
+  CONSTRAINT C_fk_idUsuario FOREIGN KEY (FK_idUsuario) REFERENCES Usuarios(idUser), 
+  CONSTRAINT C_fk_idPessoa FOREIGN KEY (FK_idPessoa) REFERENCES Pessoas(idPessoa),
+  CONSTRAINT C_fk_idProduto FOREIGN KEY (FK_idProduto) REFERENCES Produtos(idProduto)
 );
+
  -- inserinndo dados dentro das tableas 
  -- inserindo pessoas fisicas 
 INSERT INTO Pessoas (idPessoa, Nome, Logradouro, Cidade,  Estado, Telefone, Email)
@@ -99,9 +99,16 @@ Values
 	(5, 'Coca-cola 3L', 1000, 12.00); 
 
 INSERT INTO Movimentos (idMovimento, tipo, quantidade, precoUnitario, FK_idUsuario, FK_idPessoa, FK_idProduto)
-
-Values 
-	(1, 'V', 10, 5.00, 1, 1, 1),
-	(2, 'E' , 100, 2.00, 1,  7 , 4) 
-
-	
+VALUES 
+	(1, 'V', 10, 5.00, 1, 1, 1), 
+	(2, 'E', 100, 2.00, 1, 7, 4),
+	(3, 'E', 50, 3.50, 1, 8, 2),   
+    (4, 'E', 20, 1.80, 1, 9, 3),   
+    (5, 'E', 30, 4.20, 1, 10, 1),  
+    (6, 'E', 15, 2.90, 1, 11, 4),  
+    (7, 'E', 25, 2.60, 1, 12, 2),
+	(8, 'V', 8, 6.00, 1, 2, 2),   
+    (9, 'V', 12, 3.20, 1, 3, 3), 
+    (10, 'V', 6, 5.50, 1, 4, 1),   
+    (11, 'V', 10, 4.80, 1, 5, 4),  
+    (12, 'V', 15, 3.90, 1, 6, 3);  
