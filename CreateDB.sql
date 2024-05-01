@@ -72,7 +72,8 @@ VALUES
   (4, 'Budwiser','Rua', 'São Luis', 'Ma', '11999999999', 'budwiser@email.com'),
   (5, 'Ambev', 'Avenida', 'Petropoles', 'RJ', '21999999999', 'ambev@email.com'),
   (6, 'Heiniken','Parque', 'Belo Horizonte', 'MG', '31999999999', 'Heiniken@email.com'),
-  (7, 'Corona','Parque', 'Belo Horizonte', 'MG', '31999999999', 'Corona@email.com');
+  (7, 'Corona','Parque', 'Belo Horizonte', 'MG', '31999999999', 'Corona@email.com'),
+  (8, 'Coca-cola','Fabrica', 'Uberlandia ', 'MG', '31336541325', 'cocacolabr@gmail.com');
   
   INSERT INTO PessoasJuridicas (idPJ, CNPJ)
 
@@ -81,6 +82,7 @@ VALUES
   (5, '1232151546'),
   (6, '1516541351'),
   (7, '5531546535');
+  (8, '58796413561');
 
 INSERT INTO Usuarios (idUser, loginUser, Senha)
 
@@ -100,15 +102,5 @@ Values
 
 INSERT INTO Movimentos (idMovimento, tipo, quantidade, precoUnitario, FK_idUsuario, FK_idPessoa, FK_idProduto)
 VALUES 
-	(1, 'V', 10, 5.00, 1, 1, 1), 
-	(2, 'E', 100, 2.00, 1, 7, 4),
-	(3, 'E', 50, 3.50, 1, 8, 2),   
-    (4, 'E', 20, 1.80, 1, 9, 3),   
-    (5, 'E', 30, 4.20, 1, 10, 1),  
-    (6, 'E', 15, 2.90, 1, 11, 4),  
-    (7, 'E', 25, 2.60, 1, 12, 2),
-	(8, 'V', 8, 6.00, 1, 2, 2),   
-    (9, 'V', 12, 3.20, 1, 3, 3), 
-    (10, 'V', 6, 5.50, 1, 4, 1),   
-    (11, 'V', 10, 4.80, 1, 5, 4),  
-    (12, 'V', 15, 3.90, 1, 6, 3);  
+	(1, 'S', 10, 5.00, 1, 1, 1), 
+	(2, 'E', 100, 2.00, 1, 7, 4); 
