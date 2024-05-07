@@ -1,0 +1,5 @@
+CREATE TABLE PessoasJuridicas (
+  idPJ INT PRIMARY KEY  NOT NULL,
+  CNPJ VARCHAR(11) UNIQUE NOT NULL,
+  CONSTRAINT FK_PessoaJuridica_Pessoa FOREIGN KEY (idPJ) REFERENCES Pessoas(idPessoa)
+);

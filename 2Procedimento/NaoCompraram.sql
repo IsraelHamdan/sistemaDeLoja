@@ -4,4 +4,4 @@ Select
 	From Usuarios U
 	Left join Movimentos M  on U.idUser = M.FK_idUsuario
 	Where 
-		M.idMovimento IS NULL OR M.tipo <> 'E';
+		M.idMovimento IS NULL OR M.tipo <> 'S';

@@ -4,7 +4,7 @@ Select
 	SUM(M.quantidade * M.precoUnitario) / SUM(M.quantidade) as Media
 	From Movimentos M 
 	inner join Produtos P on M.FK_idProduto = idProduto
-	Where M.tipo = 'V'
+	Where M.tipo = 'S'
 	Group by M.FK_idProduto, P.nomeProduto
 
 
